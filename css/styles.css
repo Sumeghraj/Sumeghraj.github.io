@@ -1,0 +1,151 @@
+
+/* Global styles
+------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2{
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 30px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a{
+  color: red;
+}
+a:hover{
+  text-decoration: none;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.btn{
+  text-decoration: none;
+  background: red;
+  color: White;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header and Footer
+------------------------------*/
+header, footer {
+  background:#001F54;
+  color: #FEFCFB;
+}
+/* header
+-----------------------------*/
+header{
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+.profile-image{
+  border-radius: 50%;
+}
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer
+---------------------------*/
+footer{
+  text-align: center;
+}
+.contact-info a {
+  background: White;
+  padding: 10px;
+  display:inline-block;
+}
+/* Navigation
+------------------------------*/
+nav{
+  text-align: center;
+  background: White;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+/* Work Experience
+------------------------------*/
+.work {
+  background: #E3EBFF;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description ul:first-of-type{
+  margin-top: 0;
+}
+
+/* Education
+------------------------------*/
+.Education{
+  background: linear-gradient(rgba(227, 235, 255, 0.4),rgba(227, 235, 255, 0.25)),
+              url(../images/iitb-mb.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.sum p:first-of-type{
+  margin-top: 0;
+}
+
+/* Media query
+--------------------------*/
+@media (min-width: 900px) {
+  .col-left{
+    width: 30%;
+    float: left;
+    min-height: 175px;
+  }
+  .col-right{
+    width: 70%;
+    float: left;
+    min-height: 175px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px) {
+  header{
+    text-align: center;
+  }
+  .profile-img{
+    width: 200px;
+  }
+}
